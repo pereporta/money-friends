@@ -1,30 +1,42 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Device Properties Example</title>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
+    <meta name="created" content="Wed, 01 Aug 2012 15:30:14 GMT">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title></title>
+	<link rel="stylesheet" href="jTabs.css"/>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+	<script src="http://vanity.enavu.com/demo/jTabs/jTabs.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("ul.tabs").jTabs({content: ".tabs_content"});
+			});     
+	</script>
+</head>
+<body>
 
-    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
-    <script type="text/javascript" charset="utf-8">
-
-    // Wait for device API libraries to load
-    //
-    document.addEventListener("deviceready", onDeviceReady, false);
-
-    // device APIs are available
-    //
-    function onDeviceReady() {
-        var element = document.getElementById('deviceProperties');
-        element.innerHTML = 'Device Name: '     + device.name     + '<br />' +
-                            'Device Cordova: '  + device.cordova  + '<br />' +
-                            'Device Platform: ' + device.platform + '<br />' +
-                            'Device UUID: '     + device.uuid     + '<br />' +
-                            'Device Model: '    + device.model    + '<br />' +
-                            'Device Version: '  + device.version  + '<br />';
-    }
-
-    </script>
-  </head>
-  <body>
-    <p id="deviceProperties">Loading device properties...</p>
-  </body>
+<div class="wrap">
+	<ul class="tabs">  
+    	<li class="active"><a href="#">Dades</a></li>
+        <li><a href="#">Resultats</a></li>
+        <li><a href="#">Estadístiques</a></li>
+        <li><a href="#">Tutorial</a></li>
+    </ul>  
+    <div class="clear"></div>
+    <div class="tabs_content">
+   		<div>Introdueixi les dades:
+   			<form>
+   				<input value="hola"></input>
+   				
+   			</form>
+   		</div>
+		<div>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance.</div>
+		<div>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</div>
+		<div>Say you are on a weekend with friends...<br/><br/>You're a single and have already payed for the beer.<br/>Your best friend is a couple with no kids and has already payed for the apartment.<br/>Your sister has come alone with her 2 kids and accounts for three people.<br/><br/>What's each friend supposed to pay to each other? We help you with that calculation.<br/><br/>Just type:<br/>1) number of people per family<br/>2) money spent per family<br/>-> get the money to pay to each other</div>	
+	</div>
+</div>
+</body>
 </html>
