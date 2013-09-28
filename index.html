@@ -1,42 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
+
 <head>
-	<meta charset="utf-8">
-    <meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
-    <meta name="created" content="Wed, 01 Aug 2012 15:30:14 GMT">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <title></title>
-	<link rel="stylesheet" href="jTabs.css"/>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-	<script src="http://vanity.enavu.com/demo/jTabs/jTabs.js"></script>
-	<script>
-		$(document).ready(function(){
-			$("ul.tabs").jTabs({content: ".tabs_content"});
-			});     
-	</script>
+	<title>money & friends</title>
+	<meta charset='utf-8'>
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0; user-scalable=0;">
+	<link rel="apple-touch-icon" href="people.png"/>
+	<style>
+		body{
+			height:100%;
+			text-align:center;
+			background:orange;
+			padding-top:100px;
+			font-family:Arial;
+		}
+		#titol1, #titol2{
+			text-shadow: rgba(64, 64, 64, 0.9) -0px 2px 2px;
+			font-size:30px;
+			text-align:center;
+		}
+		#titol1{
+			color:white;
+		}
+		#titol2{
+			color:red;
+		}
+		.box{
+			width:100%;
+	  
+			display:-webkit-box;
+			-webkit-box-orient:horizontal;
+		  
+			display:-moz-box;
+			-moz-box-orient:horizontal;
+	  
+			display:box;
+			box-orient:horizontal;
+		}
+		.box > div {
+			-webkit-box-flex:1;
+			-moz-box-flex:1;
+			box-flex:1;
+		}
+		#box2{
+			margin:0px;
+			padding:0px;
+		}
+	</style>
+    <script>
+    	function redireccionar(){
+			setTimeout("location.href='moneyfriends1.html'", 4000);
+		}
+    </script>
 </head>
-<body>
-money&friends
-<div class="wrap">
-	<ul class="tabs">  
-    	<li class="active"><a href="#">Intro</a></li>
-        <li><a href="#">Result</a></li>
-        <li><a href="#">Stats</a></li>
-        <li><a href="#">Info</a></li>	
-    </ul>  
-    <div class="clear"></div>
-    <div class="tabs_content">
-   		<div>Introdueixi les dades:
-   			<form>
-   				<input value="hola"></input>
-   				
-   			</form>
-   		</div>
-		<div>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance.</div>
-		<div>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</div>
-		<div>Say you are on a weekend with friends...<br/><br/>You're a single and have already payed for the beer.<br/>Your best friend is a couple with no kids and has already payed for the apartment.<br/>Your sister has come alone with her 2 kids and accounts for three people.<br/><br/>What's each friend supposed to pay to each other? We help you with that calculation.<br/><br/>Just type:<br/>1) number of people per family<br/>2) money spent per family<br/>-> get the money to pay to each other</div>	
-	</div>
-</div>
+ 
+<body onload="redireccionar()">
+	<div id="box">
+		<div id="box1"></div>
+		<div id="box2">
+			<img id="imatge" src="people.png" height="80" width="80">
+			<br/>
+			<span id="titol1">money&</span><span id="titol2">friends</span>
+			<br/>
+		</div>
+		<div id="box3"></div>
+	</div>	
 </body>
+
 </html>

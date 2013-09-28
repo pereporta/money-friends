@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
+    <meta name="created" content="Wed, 01 Aug 2012 15:30:14 GMT">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title></title>
+	<link rel="stylesheet" href="jTabs.css"/>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+	<script src="http://vanity.enavu.com/demo/jTabs/jTabs.js"></script>
+    <link type="text/css" rel="stylesheet" href="moneyfriends.css"/>
+    <script src="moneyfriends.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("ul.tabs").jTabs({content: ".tabs_content"});
+			});     
+	</script>
+</head> 
+<body onload="addLine();addLine();missatge();clickCounter();">
+
+<div id="barra">
+	<div id="prevititol"></div>
+	<span id="titol"><span id="titol1">money&</span><span id="titol2">friends </span><span id="titol3"></span></span>
+	<div id="prevititol"></div>
+</div>
+
+<div class="wrap">
+	<ul class="tabs">  
+    	<li class="active"><a href="#">Intro</a></li>
+        <li><a href="#">Result</a></li>
+        <li><a href="#">Stats</a></li>
+        <li><a href="#">Info</a></li>	
+    </ul>  
+    <div class="clear"></div>
+    <div class="tabs_content">
+   		<div class="box">
+			<input class="butons" type="button" value="reset" onclick="resetea();">
+			<input class="butons" type="button" style="font-weight:none" value="calculate" onclick="valid();">
+			<input class="butons" type="button" value="friend+" onclick="addLine();">
+			<br/><br/>
+			<form name="Form">
+			   <table id="taula" align=center>
+				   <tr>
+					   <th>name</th>
+					   <th><img src="people.png" height="30" width="30"></th>
+					   <th style="font-size:23px">$</th>
+					   <th><span style="color:white">pay</span><br/><span style="color:white">get</span></th>
+					   <!-- <th>total</th> -->
+				   </tr>
+				   <tr>
+				   	   <td class="extra"></td><!-- <td class="extra" style="border:1px solid darkOrange;">total</td> -->
+					   <td style="border:1px solid #B7D264"><!-- <td style="border-top:1px solid #B7D264;border-right:1px solid #B7D264;"> -->
+					   		<input id="people" type='text' readonly class='people' name="people" size='3' style='background:#EAF2D3;border:none'>
+					   </td>
+					   <td style="border:1px solid #B7D264"><!-- <td style="border-top:1px solid #B7D264;border-right:1px solid #B7D264;"> -->
+					   		<input id="money" type='text' readonly class='money' name="money" size='6' style='background:#EAF2D3;border:none'>
+					   	</td>
+				   </tr>
+				   <tr>
+					   <td class="extra"></td><!-- <td class="extra" style="border-top:1px solid darkOrange;border-bottom:1px solid darkOrange;border-left:1px solid darkOrange;">$pers</td> -->
+					   <td class="extra"></td><!-- <td class="extra" style="border-top:none;border-top:1px solid darkOrange;border-bottom:1px solid darkOrange;border-right:1px solid darkOrange;"></td> -->
+					   <td class="extra"><!-- <td style="border-top:1px solid #B7D264;border-bottom:1px solid #B7D264;border-right:1px solid #B7D264;"> -->
+					   		<input id="despesaxpersona" type="text" readonly class="despesaxpersona" name="mitja" size=6' style='background:lightgrey;color:lightgrey;border:none'><!-- <input id="despesaxpersona" type="text" readonly class="despesaxpersona" name="mitja" size='5' style='background:#EAF2D3;border:none'> -->
+					   </td>
+				   </tr>
+			   </table>
+			</form>
+			<div id="amagat" style="visibility:hidden"></div>
+		</div>
+
+
+		<div id="results">
+				<span id='quadreResults'>
+					<span id='h3Results'><br/>Who's paying who?...</span>
+						<br/><br/><br/><br/><br/><br/>
+					</span>
+					<br/><br/>
+				</span>
+		</div>
+		<div>Estadístiques:<br/><br/>
+			Despesa per persona:<br/>
+			Número de persones:<br/>
+			Despesa total:<br/>
+			Número de dies:<br/>
+			Número d'àpats:<br/>
+			
+		</div>
+		<div>Say you are on a weekend with friends...<br/><br/>You're a single and have already payed for the beer.<br/>Your best friend is a couple with no kids and has already payed for the apartment.<br/>Your sister has come alone with her 2 kids and accounts for three people.<br/><br/>What's each friend supposed to pay to each other? We help you with that calculation.<br/><br/>Just type:<br/>1) number of people per family<br/>2) money spent per family<br/>-> get the money to pay to each other</div>	
+	</div>
+</div>
+
+			<div id="botom">@ p r a c t i c a p p s</div>
+</body>
+</html>
